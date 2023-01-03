@@ -13,21 +13,23 @@
   <table mat-table [dataSource]="characters" class="mat-elevation-z8">
     <ng-container matColumnDef="id">
       <th mat-header-cell *matHeaderCellDef>Id</th>
-      <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+      <td mat-cell *matCellDef="let character">{{ character.id }}</td>
     </ng-container>
 
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef>Name</th>
-      <td mat-cell *matCellDef="let element">
-        <a [routerLink]="['/character/', element.id]">{{ element.name }}</a>
+      <td mat-cell *matCellDef="let character">
+        <a [routerLink]="['/character/', character.id]">{{ character.name }}</a>
       </td>
     </ng-container>
 
     <ng-container matColumnDef="images">
       <th mat-header-cell *matHeaderCellDef>Picture</th>
-      <td mat-cell *matCellDef="let element">
-        <a [routerLink]="['/character/', element.id]"
-          ><img [src]="element.images.lg" alt="Picture of {{ element.name }} "
+      <td mat-cell *matCellDef="let character">
+        <a [routerLink]="['/character/', character.id]"
+          ><img
+            [src]="character.images.xs"
+            alt="Picture of {{ character.name }} "
         /></a>
       </td>
     </ng-container>
