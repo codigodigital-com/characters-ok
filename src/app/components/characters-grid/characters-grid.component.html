@@ -1,0 +1,29 @@
+<div class="spnr">
+  <mat-spinner
+    class="spinner"
+    mode="indeterminate"
+    [strokeWidth]="5"
+    [diameter]="80"
+    *ngIf="loading"
+  ></mat-spinner>
+</div>
+
+<div *ngIf="!loading" class="view">
+  <app-change-view></app-change-view>
+  <h1>Characters List grid view</h1>
+</div>
+
+<section>
+  <div class="grid-container">
+    <div *ngFor="let c of characters">
+      <mat-card class="mat-elevation-z4">
+        <span>
+          <a [routerLink]="['/character/', c.id]">
+            <img img [src]="c.images.sm" alt="Picture of {{ c.name }} "
+          /></a>
+        </span>
+        <h4>{{ c.name }}</h4>
+      </mat-card>
+    </div>
+  </div>
+</section>

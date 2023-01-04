@@ -1,0 +1,19 @@
+<div class="view">
+  <button
+    mat-flat-button
+    color="primary"
+    (click)="changeViewList()"
+    [routerLink]="['/view/list/']"
+  >
+    List
+  </button>
+
+  <button
+    mat-flat-button
+    color="primary"
+    (click)="(changeViewGrid)"
+    [routerLink]="['/view/grid/']"
+  >
+    Grid
+  </button>
+</div>

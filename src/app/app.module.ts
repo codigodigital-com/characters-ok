@@ -18,14 +18,19 @@ import { AppComponent } from './app.component';
 import { CharactersDetailComponent } from './components/characters-detail/characters-detail.component';
 import { CharactersListComponent } from './components/characters-list/characters-list.component';
 
+import { CharactersGridComponent } from './components/characters-grid/characters-grid.component';
+
 import { MatExpansionModule } from '@angular/material/expansion';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { ChangeViewComponent } from './components/change-view/change-view.component';
 @NgModule({
   declarations: [
     AppComponent,
     CharactersListComponent,
+    CharactersGridComponent,
     CharactersDetailComponent,
+    ChangeViewComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -46,7 +51,7 @@ import { environment } from '../environments/environment';
       enabled: environment.production,
       // Register the ServiceWorker as soon as the application is stable
       // or after 30 seconds (whichever comes first).
-      registrationStrategy: 'registerWhenStable:30000'
+      registrationStrategy: 'registerWhenStable:30000',
     }),
   ],
   providers: [],

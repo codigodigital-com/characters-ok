@@ -10,23 +10,25 @@
   text-align: center;
 }
 
-h4 {
+h3 {
   margin: 0;
   padding: 0;
 }
 
 section {
-  width: 250px;
-  margin: auto;
-  padding: 10px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
 }
 
 img {
-  border-radius: 5px;
-  margin: 3px;
   width: 100%;
+  height: auto;
 }
 
-button {
-  margin: 1px;
+mat-card {
+  width: 270px;
+  height: 430px;
+  text-align: center;
 }

@@ -1,12 +1,17 @@
 img {
-  width: 60px;
+  width: 50px;
   margin: 5px;
   border-radius: 5px;
 }
 
 table {
-  width: 400px;
+  width: 90%;
   margin: auto;
+  text-align: center;
+}
+
+table th {
+  text-align: center;
 }
 
 .spnr {
@@ -21,4 +26,8 @@ table {
 
 h1 {
   text-align: center;
+}
+
+.view {
+  margin: 0;
 }
