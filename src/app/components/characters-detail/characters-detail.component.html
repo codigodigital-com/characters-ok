@@ -29,9 +29,9 @@
 
           <div class="info">
             <span>
-              <h3>Intelligence:</h3>
+              <h4>Intelligence</h4>
               <mat-progress-bar
-                color="warn"
+                color="primary"
                 mode="determinate"
                 [value]="character.powerstats.intelligence"
               ></mat-progress-bar>
@@ -41,9 +41,9 @@
 
           <div class="info">
             <span>
-              <h3>Strength:</h3>
+              <h4>Strength</h4>
               <mat-progress-bar
-                color="warn"
+                color="primary"
                 mode="determinate"
                 [value]="character.powerstats.strength"
               ></mat-progress-bar>
@@ -53,9 +53,9 @@
 
           <div class="info">
             <span>
-              <h3>Speed:</h3>
+              <h4>Speed</h4>
               <mat-progress-bar
-                color="warn"
+                color="primary"
                 mode="determinate"
                 [value]="character.powerstats.speed"
               ></mat-progress-bar>
@@ -65,9 +65,9 @@
 
           <div class="info">
             <span>
-              <h3>Durability:</h3>
+              <h4>Durability</h4>
               <mat-progress-bar
-                color="warn"
+                color="primary"
                 mode="determinate"
                 [value]="character.powerstats.durability"
               ></mat-progress-bar>
@@ -77,9 +77,9 @@
 
           <div class="info">
             <span>
-              <h3>Power:</h3>
+              <h4>Power</h4>
               <mat-progress-bar
-                color="warn"
+                color="primary"
                 mode="determinate"
                 [value]="character.powerstats.power"
               ></mat-progress-bar>
@@ -89,9 +89,9 @@
 
           <div class="info">
             <span>
-              <h3>Combat:</h3>
+              <h4>Combat</h4>
               <mat-progress-bar
-                color="warn"
+                color="primary"
                 mode="determinate"
                 [value]="character.powerstats.combat"
               ></mat-progress-bar>
@@ -108,35 +108,35 @@
 
           <div class="info">
             <div>
-              <span>Gender:</span>
+              <span class="title">Gender:</span>
               {{ character.appearance.gender }}
             </div>
           </div>
 
           <div class="info">
             <div>
-              <span><h3>Race:</h3></span>
+              <span class="title">Race:</span>
               {{ character.appearance.race }}
             </div>
           </div>
 
           <div class="info">
             <div>
-              <span><h3>Height:</h3></span>
+              <span class="title">Height:</span>
               {{ character.appearance.height[1] }}
             </div>
           </div>
 
           <div class="info">
             <div>
-              <span><h3>Eye Color:</h3></span>
+              <span class="title">Eye Color:</span>
               {{ character.appearance.eyeColor }}
             </div>
           </div>
 
           <div class="info">
             <div>
-              <span><h3>Hair Color:</h3></span>
+              <span class="title">Hair Color:</span>
               {{ character.appearance.hairColor }}
             </div>
           </div>
@@ -150,46 +150,46 @@
 
           <div class="info">
             <div>
-              <span><h3>Full Name:</h3></span>
+              <span class="title">Full Name:</span>
               {{ character.biography.fullName }}
             </div>
           </div>
 
           <div class="info">
             <div>
-              <span><h3>Alter Egos:</h3></span>
+              <span class="title">Alter Egos:</span>
               {{ character.biography.alterEgos }}
             </div>
           </div>
 
           <div class="info">
             <div>
-              <span><h3>Place Of Birth:</h3></span>
+              <span class="title">Place Of Birth:</span>
               {{ character.biography.placeOfBirth }}
             </div>
           </div>
 
           <div class="info">
             <div>
-              <span><h3>Publisher:</h3></span>
+              <span class="title">Publisher:</span>
               {{ character.biography.publisher }}
             </div>
           </div>
 
           <div class="info">
             <div>
-              <span><h3>Alignment</h3></span>
+              <span class="title">Alignment</span>
               {{ character.biography.alignment }}
             </div>
           </div>
 
           <div class="info">
             <div>
-              <span><h3>Aliases:</h3></span>
+              <span class="title">Aliases:</span>
               <span
                 *ngFor="let item of character.biography.aliases; last as isLast"
               >
-                {{ item }}<span class="" *ngIf="!isLast">,</span>
+                {{ item }}<span class="title" *ngIf="!isLast">,</span>
               </span>
             </div>
           </div>
