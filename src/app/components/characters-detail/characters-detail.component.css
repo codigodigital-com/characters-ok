@@ -1,3 +1,10 @@
+h1 {
+  text-align: center;
+}
+
+mat-card-title {
+  font-size: large;
+}
 section {
   display: flex;
   flex-wrap: wrap;
@@ -25,8 +32,8 @@ mat-progress-bar {
 }
 
 .card-container {
-  width: 350px;
-  height: 500px;
+  width: 250px;
+  height: 400px;
   margin: 2px;
   text-align: center;
 }
@@ -38,9 +45,11 @@ mat-progress-bar {
 }
 
 .card-container button {
-  width: 94%;
-  margin: 1px;
+  margin: 0;
+
+  margin-bottom: 6px;
 }
 mat-card {
-  height: 550px;
+  height: auto;
+  padding: 10px;
 }
