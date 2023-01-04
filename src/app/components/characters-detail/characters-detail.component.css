@@ -25,8 +25,8 @@ mat-progress-bar {
 }
 
 .card-container {
-  width: 300px;
-  height: 500px;
+  width: 400px;
+  height: 550px;
   margin: 2px;
   text-align: center;
 }
@@ -42,5 +42,5 @@ mat-progress-bar {
   margin: 1px;
 }
 mat-card {
-  height: 500px;
+  height: 550px;
 }
